@@ -1,0 +1,81 @@
+
+.calculator{
+    width: 441px;
+    height: 736px;
+    border: 5px solid blue;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 4px 4px 4px blueviolet;
+    padding: 18px;
+    margin: 80px auto;
+}
+
+.btn{
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    border-radius: 45%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    
+    transition: color 0.3s linear;
+}
+
+.btn:hover {
+    color: violet;
+    filter: brightness(120%);
+}
+
+.btn:active{
+    filter: blur(50px);
+}
+    
+.violet{
+    background-color: blue;
+}
+
+.gray{
+    background-color: gray;
+}
+
+.calculator_buttons{
+    display: grid;
+    grid-template-areas: 'clear stepen koren delenie'
+    'seven eight nine miltiple'
+    'four five six minus'
+    'one two three plus'
+    'null null dot ravno';
+    grid-gap: 7px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.null{
+    grid-area: null;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.calculator-display{
+    height: 100px;
+    padding-top: 250px;
+    text-align: right;
+    font-size: 20px;
+    color: #fff;
+    
+}
+.logo-mesto{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    background-color: #fff;
+    top: 10px;
+    left: 10px;
+}
